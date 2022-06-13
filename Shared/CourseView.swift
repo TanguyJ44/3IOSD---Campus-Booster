@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct CourseView: View {
+    var course_name: String
+    
     var body: some View {
-        Text("Courses View")
+        Text("\(course_name)")
     }
 }
 
 struct CourseView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseView()
+        CourseView(course_name: "3XXX")
     }
 }

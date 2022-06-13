@@ -11,12 +11,36 @@ struct CourseView: View {
     var course_name: String
     
     var body: some View {
-        Text("\(course_name)")
+        
+        NavigationView() {
+            List {
+                Section(header: Text("Jour 01")) {
+                    Text("Exercice 01")
+                    Text("Exercice 02")
+                }
+                Section(header: Text("Jour 02")) {
+                    Text("Exercice 01")
+                    Text("Exercice 02")
+                    Text("Exercice 03")
+                }
+                Section(header: Text("Jour 03")) {
+                    Text("Exercice 01")
+                }
+                Section(header: Text("Jour 04")) {
+                    Text("Exercice 01")
+                    Text("Exercice 02")
+                }
+                Section(header: Text("Évaluation")) {
+                    Text("Final project - 16/20")
+                }
+            }
+            .navigationBarTitle(Text("\(course_name)"), displayMode: .inline)
+        }
     }
 }
 
 struct CourseView_Previews: PreviewProvider {
     static var previews: some View {
-        CourseView(course_name: "3XXX")
+        CourseView(course_name: "Cours")
     }
 }

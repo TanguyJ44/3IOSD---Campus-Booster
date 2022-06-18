@@ -15,6 +15,10 @@
 		6F405269285A27B600944CBA /* CoursesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F405267285A27B600944CBA /* CoursesData.swift */; };
 		6F40526B285A360500944CBA /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F40526A285A360500944CBA /* courses.json */; };
 		6F40526C285A360500944CBA /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F40526A285A360500944CBA /* courses.json */; };
+		6F40526E285DF0BA00944CBA /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F40526D285DF0BA00944CBA /* user.json */; };
+		6F40526F285DF0BA00944CBA /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F40526D285DF0BA00944CBA /* user.json */; };
+		6F405271285DF12D00944CBA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F405270285DF12D00944CBA /* UserData.swift */; };
+		6F405272285DF12D00944CBA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F405270285DF12D00944CBA /* UserData.swift */; };
 		6FDBBE02283D4A67008E94E7 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBBE01283D4A67008E94E7 /* Tests_iOS.swift */; };
 		6FDBBE04283D4A67008E94E7 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBBE03283D4A67008E94E7 /* Tests_iOSLaunchTests.swift */; };
 		6FDBBE0E283D4A67008E94E7 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDBBE0D283D4A67008E94E7 /* Tests_macOS.swift */; };
@@ -55,6 +59,8 @@
 		6F4052612859E01F00944CBA /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		6F405267285A27B600944CBA /* CoursesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesData.swift; sourceTree = "<group>"; };
 		6F40526A285A360500944CBA /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = courses.json; path = ../../../courses.json; sourceTree = "<group>"; };
+		6F40526D285DF0BA00944CBA /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = user.json; path = ../../../user.json; sourceTree = "<group>"; };
+		6F405270285DF12D00944CBA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		6FDBBDE9283D4A65008E94E7 /* Campus_BoosterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campus_BoosterApp.swift; sourceTree = "<group>"; };
 		6FDBBDEA283D4A65008E94E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6FDBBDEB283D4A67008E94E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		6FDBBDE8283D4A65008E94E7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6F40526D285DF0BA00944CBA /* user.json */,
 				6F40526A285A360500944CBA /* courses.json */,
 				6FDBBDE9283D4A65008E94E7 /* Campus_BoosterApp.swift */,
 				6FDBBDEA283D4A65008E94E7 /* ContentView.swift */,
@@ -128,6 +135,7 @@
 				6F40525B2858893700944CBA /* CircularProgressView.swift */,
 				6F4052612859E01F00944CBA /* ProgressBarView.swift */,
 				6F405267285A27B600944CBA /* CoursesData.swift */,
+				6F405270285DF12D00944CBA /* UserData.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F40526E285DF0BA00944CBA /* user.json in Resources */,
 				6F40526B285A360500944CBA /* courses.json in Resources */,
 				6FDBBE15283D4A67008E94E7 /* Assets.xcassets in Resources */,
 			);
@@ -303,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F40526F285DF0BA00944CBA /* user.json in Resources */,
 				6F40526C285A360500944CBA /* courses.json in Resources */,
 				6FDBBE16283D4A67008E94E7 /* Assets.xcassets in Resources */,
 			);
@@ -332,6 +342,7 @@
 				6FDBBE13283D4A67008E94E7 /* ContentView.swift in Sources */,
 				6FDBBE2C283D4FBC008E94E7 /* UserView.swift in Sources */,
 				6F405268285A27B600944CBA /* CoursesData.swift in Sources */,
+				6F405271285DF12D00944CBA /* UserData.swift in Sources */,
 				6FDBBE11283D4A67008E94E7 /* Campus_BoosterApp.swift in Sources */,
 				6FDBBF5B284228AC008E94E7 /* HomeView.swift in Sources */,
 				6F40525C2858893700944CBA /* CircularProgressView.swift in Sources */,
@@ -347,6 +358,7 @@
 				6FDBBE14283D4A67008E94E7 /* ContentView.swift in Sources */,
 				6FDBBE2D283D4FBC008E94E7 /* UserView.swift in Sources */,
 				6F405269285A27B600944CBA /* CoursesData.swift in Sources */,
+				6F405272285DF12D00944CBA /* UserData.swift in Sources */,
 				6FDBBE12283D4A67008E94E7 /* Campus_BoosterApp.swift in Sources */,
 				6FDBBF5C284228AC008E94E7 /* HomeView.swift in Sources */,
 				6F40525D2858893700944CBA /* CircularProgressView.swift in Sources */,

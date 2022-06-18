@@ -9,8 +9,9 @@ import SwiftUI
 
 struct UserView: View {
 
+    @ObservedObject var datas = ReadUserData()
     @State var progress: Double = 0.6
-    
+
     var body: some View {
         
         VStack() {
@@ -30,24 +31,24 @@ struct UserView: View {
                 
                 
                 VStack() {
-                    Text("JOSEPH").font(.title2)
+                    Text("\(datas.user[0].lastname)").font(.title2)
                         .frame(width: 100, height: 10, alignment: .leading).padding(5)
                                     
-                    Text("Tanguy").font(.title2)
+                    Text("\(datas.user[0].firstname)").font(.title2)
                         .frame(width: 100, height: 10, alignment: .leading).padding(5)
                     
-                    Text("B.ENG 3").font(.title2)
+                    Text("\(datas.user[0].promo)").font(.title2)
                         .frame(width: 100, height: 10, alignment: .leading).padding(5)
                 }.frame(width: 100, height: 100)
-
+                
             }
             
             ProgressBarView().padding(50)
             
-            Text("Email : tanguy.joseph@supinfo.com").font(.subheadline)
+            Text("Email : \(datas.user[0].email)").font(.subheadline)
                 .frame(width: 250, height: 10, alignment: .leading).padding(2)
             
-            Text("Identifiant : 303082").font(.subheadline)
+            Text("Identifiant : \(datas.user[0].boosterid)").font(.subheadline)
                 .frame(width: 250, height: 10, alignment: .leading)
             
         }

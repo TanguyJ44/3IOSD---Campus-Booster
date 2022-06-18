@@ -14,6 +14,7 @@ struct UserData: Codable, Identifiable {
         case promo
         case email
         case boosterid
+        case promoects
         case ects
     }
     
@@ -23,7 +24,8 @@ struct UserData: Codable, Identifiable {
     var promo: String
     var email: String
     var boosterid: String
-    var ects: String
+    var promoects: Int
+    var ects: Int
 }
 
 class ReadUserData: ObservableObject  {

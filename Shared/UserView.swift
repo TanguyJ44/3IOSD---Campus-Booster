@@ -10,8 +10,7 @@ import SwiftUI
 struct UserView: View {
 
     @ObservedObject var datas = ReadUserData()
-    @State var progress: Double = 0.6
-
+    
     var body: some View {
         
         VStack() {
@@ -22,13 +21,12 @@ struct UserView: View {
             HStack() {
                 
                 ZStack() {
-                    CircularProgressView(progress: progress)
+                    CircularProgressView(progress: (Double(datas.user[0].promoects) * 1.0) / 60.0)
                     
                     Image(systemName: "person").resizable()
                     .frame(width: 35.0, height: 35.0)
                     
                 }.frame(width: 100, height: 100).padding()
-                
                 
                 VStack() {
                     Text("\(datas.user[0].lastname)").font(.title2)
@@ -43,7 +41,7 @@ struct UserView: View {
                 
             }
             
-            ProgressBarView().padding(50)
+            ProgressBarView(progres: (Double(datas.user[0].ects) * 250.0) / 300.0, ects: datas.user[0].ects).padding(50)
             
             Text("Email : \(datas.user[0].email)").font(.subheadline)
                 .frame(width: 250, height: 10, alignment: .leading).padding(2)
@@ -58,6 +56,13 @@ struct UserView: View {
 }
 
 private func progress(value: Double,
+                      maxValue: Double,
+                      width: CGFloat) -> CGFloat {
+    let percentage = value / maxValue
+    return width *  CGFloat(percentage)
+}
+
+private func progres(value: Double,
                       maxValue: Double,
                       width: CGFloat) -> CGFloat {
     let percentage = value / maxValue
